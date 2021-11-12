@@ -14,78 +14,96 @@
 
 <body>
 
-<a id="logo" href=""><img src="images/logo.png" alt="logo" width="150" height="100"></a>
+  <a id="logo" href=""><img src="images/logo.png" alt="logo" width="150" height="100"></a>
   <nav>
-  <a href="">الصفحة الرئيسية</a>
-  <a href="about.html">عن مدين</a>
-  <a href="orderProc.html">طريقة الطلب</a>
-  <a href="faq.html">الاسئلة الشائعة</a>
-  <a href=#sign-form><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
-</nav>
+    <a href="">الصفحة الرئيسية</a>
+    <a href="about.html">عن مدين</a>
+    <a href="orderProc.html">طريقة الطلب</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+    <a href=#sign-form><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
+  </nav>
 
 
-        <div class="sign-form">
-        <img src="images/signicon.jpg" width="90px" height="90px" >
-        <form  id="sign-in" action="" method="post">
-        <label for="user_name"> اسم المستخدم</label> <br />
-        <input type="text" id="user_name" name="user_name" placeholder="أدخل اسم المستخدم "  min="3" size="10" autofocus required > <br /> <br/>
-        <label for="pasword"> كلمة المرور</label> <br />
-        <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" min="8" required > <br />
-        <label for="remember">تذكرني لاحقًا</label>
-        <input type="checkbox" name="remember" value="true" checked> <br /><br/>
-        <input type="button" value="إنشاء حساب">
-        <input type="submit" value="دخول">
+  <div class="sign-form">
+    <img src="images/login.png" width="100" height="100">
+    <form id="" action="" method="post">
+
+      <div class="row">
+        <div class="col-1">
+          <label for="user_name"> اسم المستخدم</label>
+        </div>
+        <div class="col-2">
+          <input type="text" id="user_name" name="user_name" placeholder="أدخل اسم المستخدم " min="3" size="10" autofocus required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1">
+          <label for="pasword"> كلمة المرور</label>
+        </div>
+        <div class="col-2">
+          <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" min="8" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <label for="remember">تذكرني لاحقًا</label>
+          <input type="checkbox" name="remember" value="true" checked>
+        </div>
+      </div>
+
+      <div class="row col-3">
+        <a href="createAcc.html"><button class="button" type="button" name="button">إنشاء حساب</button></a>
+        <input class="button" type="submit" value="دخول">
+      </div>
+
     </form>
-            </div>
+  </div>
 
-
-
-    <dive class="intro">
-        <br/>
-     <h1> : مدين </h1>
-     <p>    نقدم المساندات اليوم بشكل مختلف حيث نعتمد على التقنيات لحل العادات التقليدية، فنحن موقع عربي يسهم في تسهيل عملية الاستدانة بأسلوب أمثل
+  <div class="intro">
+    <h1> : مدين </h1>
+    <p> نقدم المساندات اليوم بشكل مختلف حيث نعتمد على التقنيات لحل العادات التقليدية، فنحن موقع عربي يسهم في تسهيل عملية الاستدانة بأسلوب أمثل
     </p>
-            </dive>
+  </div>
 
-    <table>
-    <td>
-          <div class="order-card">
-            <img src="images/hospital.jpg" alt="hospital" style="width:100%">
-        <p><strong>: رقم الطلب</strong></p>
-        <p>: المبلغ</p>
-        <p> : نوع الدفع</p>
+      <table class="order-present">
+      <td>
+            <div class="order-card">
+              <img src="images\hospital.png" alt="hospital" style="width:100%">
+          <p><strong>: رقم الطلب</strong></p>
+          <p>: المبلغ</p>
+          <p> : نوع الدفع</p>
+          <a href="#">مساندة الحالة</a>
+          <!--<input type="button" value="مساندة الحالة " class="agree"> -->
+                  </div>
+          </td>
 
-        <input type="button" value="مساندة الحالة " class="agree">
-                </div>
-        </td>
+          <td>
+      <div class="order-card">
+              <img src="images\project.png" alt="hospital" style="width:100%">
+          <p><strong>: رقم الطلب</strong></p>
+          <p>: المبلغ</p>
+          <p> : نوع الدفع</p>
+          <a href="#">مساندة الحالة</a>
+          <!--<input type="button" value="مساندة الحالة " class="agree"> -->
+                  </div> </td>
 
-        <td>
-    <div class="order-card">
-            <img src="images/hospital.jpg" alt="hospital" style="width:100%">
-        <p><strong>: رقم الطلب</strong></p>
-        <p>: المبلغ</p>
-        <p> : نوع الدفع</p>
-        <input type="button" value="مساندة الحالة " class="agree">
-                </div> </td>
+          <td>
+      <div class="order-card">
+              <img src="images\study.png" alt="hospital" style="width:100%">
+          <p><strong>: رقم الطلب</strong></p>
+          <p>: المبلغ</p>
+          <p> : نوع الدفع</p>
+          <a href="#">مساندة الحالة</a>
+          <!--<input type="button" value="مساندة الحالة " class="agree"> -->
 
-        <td>
-    <div class="order-card">
-            <img src="images/study.jpg" alt="hospital" style="width:100%">
-        <p><strong>: رقم الطلب</strong></p>
-        <p>: المبلغ</p>
-        <p> : نوع الدفع</p>
-
-        <input type="button" value="مساندة الحالة " class="agree">
-                </div> </td>
-
-        </table>
-
-
+          </table>
   <footer>
-  <small>جميع الحقوق محفوظة 2021</small><br>
-  <a href="contactUs.html">تواصل معنا</a>
-  <a href="faq.html">الاسئلة الشائعة</a>
-</footer>
+    <small>جميع الحقوق محفوظة 2021</small><br>
+    <a href="contactUs.html">تواصل معنا</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+  </footer>
 
-    </body>
+</body>
+
 </html>
