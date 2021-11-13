@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,21 @@
     <a href="index.html#singin"><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
   </nav>
 
-
   <div>
     <h1 class="heading" style="text-align:center;"> الطلبات </h1>
     <table class="order-details">
       <tr>
+        <td colspan="3" id="filter">
+        <button class="btn" onclick="filterSelection('project')"> آخرى</button>
+        <button class="btn" onclick="filterSelection('project')"> مشاريع</button>
+        <button class="btn" onclick="filterSelection('hospital')"> علاج</button>
+        <button class="btn" onclick="filterSelection('study')"> دراسة</button>
+        <button class="btn active" onclick="filterSelection('all')"> الكل</button>
+      </td>
+      </tr>
+      <tr>
         <td>
-          <div class="order-card">
+          <div class="order-card projrct">
             <img src="images/project.png" alt="projrct" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -40,7 +49,7 @@
         </td>
 
         <td>
-          <div class="order-card">
+          <div class="order-card hospital">
             <img src="images/hospital.png" alt="hospital" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -51,7 +60,7 @@
         </td>
 
         <td>
-          <div class="order-card">
+          <div class="order-card study">
             <img src="images/study.png" alt="study" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -64,7 +73,7 @@
 
       <tr>
         <td>
-          <div class="order-card">
+          <div class="order-card projrct">
             <img src="images/project.png" alt="projrct" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -75,7 +84,7 @@
         </td>
 
         <td>
-          <div class="order-card">
+          <div class="order-card hospital">
             <img src="images/hospital.png" alt="hospital" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -86,7 +95,7 @@
         </td>
 
         <td>
-          <div class="order-card">
+          <div class="order-card study">
             <img src="images/study.png" alt="study" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -100,7 +109,7 @@
 
       <tr>
         <td>
-          <div class="order-card">
+          <div class="order-card projrct">
             <img src="images/project.png" alt="projrct" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -111,7 +120,7 @@
         </td>
 
         <td>
-          <div class="order-card">
+          <div class="order-card hospital">
             <img src="images/hospital.png" alt="hospital" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>
@@ -122,7 +131,7 @@
         </td>
 
         <td>
-          <div class="order-card">
+          <div class="order-card study">
             <img src="images/study.png" alt="study" style="width:100%">
             <p><strong>: رقم الطلب</strong></p>
             <p>: المبلغ</p>

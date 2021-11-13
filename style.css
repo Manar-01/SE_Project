@@ -154,6 +154,24 @@ fieldset{
     padding: 2em;
 }
 
+.btn {
+  border: none;
+  border-radius: 2em;
+  outline: none;
+  padding: 1em 4em;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
 .order-card {
   clear: both;
   box-shadow: 6px 4px 8px 0 rgba(0, 0, 0, 0.2);
