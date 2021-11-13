@@ -1,3 +1,7 @@
+function checksingin() {
+  document.getElementById("massege").innerText = "الرجاء تسجيل الدخول اولا أو انشئ حساب";
+}
+
 
 //function for edit button in cpp/dpp page
 function edit_func() {
@@ -7,9 +11,11 @@ function edit_func() {
   }
 }
 
-//"createAcc" page functions: 
 
-//Checking password function 
+
+//"createAcc" page functions:
+
+//Checking password function
 function checkpass() {
   var pass = document.getElementById('password').value;
   var passconfirm = document.getElementById('confirm_password').value;
@@ -31,7 +37,7 @@ function checkpass() {
 }
 
 
-//Checking empty fields functions 
+//Checking empty fields functions
 function checkCard(){
   var exp = document.getElementById('card-exp').value;
   var cvc = document.getElementById('cvc').value ;
@@ -42,7 +48,7 @@ function checkCard(){
       document.getElementById('cardmsg').innerHTML =  null ;
      }
      else{
-      document.getElementById('cardmsg').innerHTML =  '*' ; 
+      document.getElementById('cardmsg').innerHTML =  '*' ;
      }
 }
 
@@ -50,7 +56,7 @@ function checkname(){
   var name = document.getElementById('username').value;
 
   if(name == "" ){
-    document.getElementById('usermsg').innerHTML = '*' ; 
+    document.getElementById('usermsg').innerHTML = '*' ;
   }
   else{
     document.getElementById('usermsg').innerHTML = null ;
@@ -77,9 +83,28 @@ function checkPhone(){
   }
 }
 
-//Checking if the input is a number 
+//Checking if the input is a number
 function isNumberKey(evt){
   var charCode = (evt.which) ? evt.which : evt.keyCode
   return !(charCode > 31 && (charCode < 48 || charCode > 57));
 }
 
+// Checking for ContactUs page
+document.getElementById("formCon").onsubmit=function() {checkCon()};
+
+function checkCon(){
+
+	var email= document.getElementById('email').value;
+	var title= document.getElementById('title').value;
+	var content= document.getElementById('content').value;
+
+	if(email == "" || title == "" || content == ""){
+		alert("رجاءًأدخل جميع الحقول");
+		return false;
+	}
+	else{
+
+		alert("تم أستلام رسالتك بنجاح");
+		return true;
+	}
+}
