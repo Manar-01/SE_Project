@@ -10,152 +10,134 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
-
   <a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
   <nav>
     <a href="index.html">الصفحة الرئيسية</a>
     <a href="about.html">عن مدين</a>
     <a href="orderProc.html">طريقة الطلب</a>
     <a href="faq.html">الاسئلة الشائعة</a>
-    <a href="index.html#singin"><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
+    <a href="dpp.html"><i class="fa fa-fw fa-user"></i> حسابي</a>
   </nav>
 
-  <div>
-    <h1 class="heading" style="text-align:center;"> الطلبات </h1>
-    <table class="order-details">
-      <tr>
-        <td colspan="3" id="filter">
-        <button class="btn" onclick="filterSelection('project')"> آخرى</button>
-        <button class="btn" onclick="filterSelection('project')"> مشاريع</button>
-        <button class="btn" onclick="filterSelection('hospital')"> علاج</button>
-        <button class="btn" onclick="filterSelection('study')"> دراسة</button>
-        <button class="btn active" onclick="filterSelection('all')"> الكل</button>
-      </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="order-card projrct">
-            <img src="images/project.png" alt="projrct" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
-
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
-
-        <td>
-          <div class="order-card hospital">
-            <img src="images/hospital.png" alt="hospital" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
-
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
-
-        <td>
-          <div class="order-card study">
-            <img src="images/study.png" alt="study" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
-
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="order-card projrct">
-            <img src="images/project.png" alt="projrct" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
-
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
-
-        <td>
-          <div class="order-card hospital">
-            <img src="images/hospital.png" alt="hospital" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
-
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
-
-        <td>
-          <div class="order-card study">
-            <img src="images/study.png" alt="study" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
-
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
-      </tr>
 
 
-      <tr>
-        <td>
-          <div class="order-card projrct">
-            <img src="images/project.png" alt="projrct" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
+  <h1 class="heading" style="text-align:center; font-size: 2em;"> الطلبات </h1>
 
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
+  <div id="myBtnContainer" style="text-align:center;">
+    <button class="btn active" onclick="filterSelection('all')"> الكل</button>
+    <button class="btn" onclick="filterSelection('study')"> دراسة</button>
+    <button class="btn" onclick="filterSelection('hospital')"> علاج</button>
+    <button class="btn" onclick="filterSelection('project')"> مشاريع</button>
+    <button class="btn" onclick="filterSelection('other')"> آخرى</button>
+  </div>
 
-        <td>
-          <div class="order-card hospital">
-            <img src="images/hospital.png" alt="hospital" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
+  <div class="order-details">
+    <div class="row" id="order-project">
+      <div class="order-card project">
+        <img src="images/project.png" alt="project" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
 
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
+        <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
+      </div>
 
-        <td>
-          <div class="order-card study">
-            <img src="images/study.png" alt="study" style="width:100%">
-            <p><strong>: رقم الطلب</strong></p>
-            <p>: المبلغ</p>
-            <p> : نوع الدفع</p>
+      <div class="order-card hospital">
+        <img src="images/hospital.png" alt="hospital" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
 
-            <a href="#">مساندة الحالة</a>
-          </div>
-        </td>
+        <a href="#">مساندة الحالة</a>
+      </div>
 
-      </tr>
+      <div class="order-card study">
+        <img src="images/study.png" alt="study" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
 
-    </table>
-  </dive>
+        <a href="#">مساندة الحالة</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="order-card project">
+        <img src="images/project.png" alt="project" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
+      </div>
+
+      <div class="order-card hospital">
+        <img src="images/hospital.png" alt="hospital" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#">مساندة الحالة</a>
+      </div>
+
+      <div class="order-card study">
+        <img src="images/study.png" alt="study" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#">مساندة الحالة</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="order-card project">
+        <img src="images/project.png" alt="project" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
+      </div>
+
+      <div class="order-card hospital">
+        <img src="images/hospital.png" alt="hospital" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#">مساندة الحالة</a>
+      </div>
+
+      <div class="order-card study">
+        <img src="images/study.png" alt="study" style="width:100%">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#">مساندة الحالة</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="modal-content order-card project animate">
+      <img src="images/project.png" alt="project" style="width:100%">
+      <p><strong>: رقم الطلب</strong></p>
+      <p>: المبلغ</p>
+      <p> : نوع الدفع</p>
+      <p>: السبب</p>
+      <p>حاجة ماسّة لإكمال وتطوير مشروع تجاري بسيط
+        ستكون خير معين لي وسألتزم بدفع الأقساط الشهرية </p>
+      <a href="#">مساندة الحالة</a>
+
+    </div>
+  </div>
+
   <footer>
     <small>جميع الحقوق محفوظة 2021</small><br>
     <a href="contactUs.html">تواصل معنا</a>
     <a href="faq.html">الاسئلة الشائعة</a>
   </footer>
-
-</body>
-
-</html>
-
-
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,66 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>عن مدين</title>
-        <script type="text/javascript" src="js/index.js"></script>
-        <link rel="icon" href="images/logo.png">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
-        <a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
-        <nav>
-            <a href="index.html">الصفحة الرئيسية</a>
-            <a href="about.html">عن مدين</a>
-            <a href="orderProc.html">طريقة الطلب</a>
-            <a href="faq.html">الاسئلة الشائعة</a>
-            <a href="index.html#singin"><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
-          </nav>
+<head>
+  <meta charset="utf-8" />
+  <title>عن مدين</title>
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
 
-          <!-- Start -->
-          <div class="about-heading">
-             <h1 class="about-heading-1"> عن مدين</h1>
-             <!--<hr class="line-heading"> -->
-             <p class="top-p">
-              <pre class="top-p">
+<body>
+  <a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
+  <nav>
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="about.html">عن مدين</a>
+    <a href="orderProc.html">طريقة الطلب</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+    <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
+  </nav>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="modal-content animate">
+      <form id="signin" action="" method="post">
+        <img src="images/login.png" width="100" height="100">
+        <div class="row">
+          <div class="col-1">
+            <label for="user_name"> اسم المستخدم</label>
+            <span id="massege" style="color:red; font-size:0.8em;"></span>
+          </div>
+          <div class="col-2">
+            <input type="text" id="user_name" name="user_name" placeholder="أدخل اسم المستخدم " min="3" size="10" autofocus required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            <label for="pasword"> كلمة المرور</label>
+          </div>
+          <div class="col-2">
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" min="8" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="remember">تذكرني لاحقًا</label>
+            <input type="checkbox" name="remember" value="true" checked>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <a href="createAcc.html"><button class="button" type="button" name="button">إنشاء حساب</button></a>
+            <input class="button" type="submit" value="دخول">
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Start -->
+  <div class="about-heading">
+    <h1 class="about-heading-1"> عن مدين</h1>
+    <!--<hr class="line-heading"> -->
+    <p class="top-p">
+    <pre class="top-p">
                     نقدم المساندات اليوم بشكل مختلف حيث نعتمد على التقنيات لحل العادات
                      .التقليدية، فنحن موقع عربي يسهم في تسهيل عملية التديّن بأسلوب أمثل
               </pre>
-             </p>
-          </div>
+    </p>
+  </div>
 
-          <!-- Goals section -->
-          <div class="goals">
-            <h1 class="about-heading-2"> الأهـــداف</h1>
-            <table class="bottom-Table"  >
+  <!-- Goals section -->
+  <div class="goals">
+    <h1 class="about-heading-2"> الأهـــداف</h1>
+    <table class="bottom-Table">
 
-              <tr>
-                <th class="r1-col" scope="col">رفع مستوى الموثوقية <img src="images/handicon.png" alt="icon" width="40" height="40" /></th>
-                <th class="r1-col" scope="col">تعزيز <img src="images/handicon.png" alt="icon" width="40" height="40" /></th>
-                <th class="r1-col" scope="col">تمكين <img src="images/handicon.png" alt="icon" width="40" height="40" /></th>
-              </tr>
+      <tr>
+        <th class="r1-col" scope="col">رفع مستوى الموثوقية <img src="images/handicon.png" alt="icon" width="40" height="40" /></th>
+        <th class="r1-col" scope="col">تعزيز <img src="images/handicon.png" alt="icon" width="40" height="40" /></th>
+        <th class="r1-col" scope="col">تمكين <img src="images/handicon.png" alt="icon" width="40" height="40" /></th>
+      </tr>
 
-              <tr>
-                <td  class="r2-col" scope="col">و الشفافية للعمل الخيري </td>
-                <td  class="r2-col" scope="col"> قيم الأنتماء الوطني <br>و العمل الإنساني للفرد</td>
-                <td  class="r2-col" scope="col"> القطاع غير الربحي <br>و توزيع أثره</td>
-              </tr>
+      <tr>
+        <td class="r2-col" scope="col">و الشفافية للعمل الخيري </td>
+        <td class="r2-col" scope="col"> قيم الأنتماء الوطني <br>و العمل الإنساني للفرد</td>
+        <td class="r2-col" scope="col"> القطاع غير الربحي <br>و توزيع أثره</td>
+      </tr>
 
-            </table>
+    </table>
 
-          </div>
+  </div>
 
 
 
-          <footer class="about-footer">
-            <small>جميع الحقوق محفوظة 2021</small><br>
-            <a href="contactUs.html">تواصل معنا</a>
-            <a href="faq.html">الاسئلة الشائعة</a>
-          </footer>
-    </body>
+  <footer class="about-footer">
+    <small>جميع الحقوق محفوظة 2021</small><br>
+    <a href="contactUs.html">تواصل معنا</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+  </footer>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>

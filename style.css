@@ -88,6 +88,7 @@ fieldset{
   text-align: right;
 }
 
+/* index pargraph*/
 .intro{
   text-align: right;
   padding-top: 12em;;
@@ -106,24 +107,91 @@ fieldset{
   padding: 0 1.5em;
 }
 
+/*The Modal (background)*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* The Close Button for modal */
+.close {
+  position: absolute;
+  right:1.5em;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Modal Content and singin Box */
+.modal-content,.sign-form{
+  text-align: center;
+  border: 0.063em solid #279F8A;
+  border-radius:2em;
+  padding: 1em 0 1em 0;
+}
+.modal-content {
+  margin: 5% auto 15% auto;
+  width: 30%;
+  background-color: #ffffff;
+}
+
+.modal-content.order-card{
+  width: 25%;
+  height: auto;
+  line-height: 1;
+}
+
+.modal-content.order-card a{
+  padding-left:2em;
+  padding-top: 0;
+  float: left;
+}
+
 .sign-form{
-    border: 0.063em solid #279F8A;
-    text-align: center;
-    border-radius: 2em;
-    padding: 1em 0 1em 0;
     float: left;
     margin: 1em 5em 4em;
     width: 30%;
     height: 20%;
-
     box-shadow: 1px 1px #D7D7D7;
-
 }
-.sign-form .row{
+.sign-form .row ,.modal-content .row{
   padding-right: 3em;
   line-height: 3;
 }
-.sign-form .col-1{
+.sign-form .col-1,.modal-content .col-1{
   width: 100%;
 }
 
@@ -139,26 +207,33 @@ fieldset{
 
 }
 
-.sign-form input[type=text], .sign-form input[type=password]{
+.sign-form input[type=text], .sign-form input[type=password],.modal-content input[type=text], .modal-content input[type=password]{
   width: 110%;
 }
 
-
+/*list of order and its filter*/
 .order-details{
-  position:relative;
   text-align: center;
-  padding-left: 9em;
 }
 
 .order-details td {
-    padding: 2em;
+  padding-left: 8em;
+}
+
+.order-details .row{
+  display: inline-table;
+  padding: 2em;
+}
+
+.order-details .row .order-card{
+margin-bottom: 2em;
 }
 
 .btn {
   border: none;
   border-radius: 2em;
   outline: none;
-  padding: 1em 4em;
+  padding: 1em 3em;
   background-color: #f1f1f1;
   cursor: pointer;
 }
@@ -170,6 +245,10 @@ fieldset{
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+.show {
+  display:none;
 }
 
 .order-card {
@@ -213,12 +292,10 @@ fieldset{
 }
 
 
-/*cpp style*/
+/*forms style*/
 .row{
   padding-right: 2em;
 }
-
-
 
 .col-1 {
   float: right;
@@ -244,6 +321,9 @@ fieldset{
   display: table;
   clear: both;
 }
+
+/* list of order in cpp and ddp pages*/
+
 .orderProc{
   padding: 4em 2em 0 0;
   text-align: right;
