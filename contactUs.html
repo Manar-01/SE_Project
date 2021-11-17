@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>تواصل معنا</title>
+  <link rel="stylesheet" href="general.css">
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -64,53 +65,56 @@
     </div>
   </div>
 
-
+  <!--start-->
+  <h1 class="heading underlined-heading"><strong>تواصل معنا</strong></h1>
   <form action="contactUs.html" method="post" id="formCon">
-    <div class="headingCon">
-      <legend><strong>تواصل معنا</strong></legend>
+    <fieldset>
+      <div class="row-forms">
 
-    </div>
-    <div class="rows row">
+        <div class="col-1">
+          <label for="email">البريد الالكتروني</label>
+        </div>
 
-      <div class="col-1">
-        <label for="email">البريد الالكتروني</label>
+        <div class="col-2">
+          <input type="email" id="email" name="email" placeholder="yourName@example.com" class="box" />
+        </div>
+
       </div>
 
-      <div class="col-2">
-        <input type="email" id="email" name="email" placeholder="yourName@example.com" class="box" />
+      <div class="row-forms">
+
+        <div class="col-1">
+          <label for="title">العنوان</label>
+        </div>
+
+        <div class="col-2">
+          <input type="text" id="title" name="title" class="box" />
+        </div>
+
       </div>
 
-    </div>
+      <div class="row-forms">
 
-    <div class="rows row">
+        <div class="col-1">
+          <label for="content">المحتوى</label>
+        </div>
 
-      <div class="col-1">
-        <label for="title">العنوان</label>
+        <div class="col-2">
+          <textarea id="content" name="content"></textarea>
+        </div>
+
       </div>
 
-      <div class="col-2">
-        <input type="text" id="title" name="title" class="box" />
+      <div class="row-forms col-3">
+        <input type="submit" name="sub" value="إرسال" class="button" />
       </div>
 
-    </div>
 
-    <div class="rows row">
-
-      <div class="col-1">
-        <label for="content">المحتوى</label>
-      </div>
-
-      <div class="col-2">
-        <textarea id="content" name="content" class="box"></textarea>
-      </div>
-
-    </div>
-
-    <input type="submit" name="sub" value="إرسال" class="button buttonCon" />
+    </fieldset>
 
   </form>
 
-  <footer class="footer">
+  <footer>
     <small>جميع الحقوق محفوظة 2021</small><br>
     <a href="contactUs.html">تواصل معنا</a>
     <a href="faq.html">الاسئلة الشائعة</a>

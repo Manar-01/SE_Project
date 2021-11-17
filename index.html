@@ -24,7 +24,7 @@
     <a href=#sign-form><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
   </nav>
 
-
+  <!-- Start -->
   <div class="sign-form">
     <img src="images/login.png" width="100" height="100">
     <form id="signin" action="" method="post">
@@ -62,51 +62,51 @@
     </form>
   </div>
 
-  <div class="intro">
-    <h1> : مدين </h1>
-    <p> نقدم المساندات اليوم بشكل مختلف حيث نعتمد على التقنيات لحل العادات التقليدية، فنحن موقع عربي يسهم في تسهيل عملية الاستدانة بأسلوب أمثل
-    </p>
+  <div>
+    <h1 class="heading underlined-heading"> : مدين </h1>
+    <p class="top-p"> نقدم المساندات اليوم بشكل مختلف حيث نعتمد على التقنيات لحل العادات التقليدية، فنحن موقع عربي يسهم في تسهيل عملية الاستدانة بأسلوب أمثل </p>
   </div>
 
-  <table class="order-details">
-    <tr>
-      <td>
-        <div class="order-card">
-          <img src="images\hospital.png" alt="hospital" style="width:100%">
+  <div class="row">
+
+    <div class="col">
+      <div class="order-card card-home">
+        <img src="images\hospital.png" alt="hospital">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#signin" onclick="checksingin();">مساندة الحالة</a>
+      </div>
+
+      <div class="col">
+        <div class="order-card card-home">
+          <img src="images\project.png" alt="hospital">
           <p><strong>: رقم الطلب</strong></p>
           <p>: المبلغ</p>
           <p> : نوع الدفع</p>
           <a href="#signin" onclick="checksingin();">مساندة الحالة</a>
         </div>
-      </td>
+      </div>
 
-      <td>
-        <div class="order-card">
-          <img src="images\project.png" alt="hospital" style="width:100%">
+      <div class="col">
+        <div class="order-card card-home">
+          <img src="images\study.png" alt="hospital">
           <p><strong>: رقم الطلب</strong></p>
           <p>: المبلغ</p>
           <p> : نوع الدفع</p>
           <a href="#signin" onclick="checksingin();">مساندة الحالة</a>
         </div>
-      </td>
+      </div>
 
-      <td>
-        <div class="order-card">
-          <img src="images\study.png" alt="hospital" style="width:100%">
-          <p><strong>: رقم الطلب</strong></p>
-          <p>: المبلغ</p>
-          <p> : نوع الدفع</p>
-          <a href="#signin" onclick="checksingin();">مساندة الحالة</a>
-      </td>
-    </tr>
-  </table>
+    </div>
 
-  <footer>
-    <small>جميع الحقوق محفوظة 2021</small><br>
-    <a href="contactUs.html">تواصل معنا</a>
-    <a href="faq.html">الاسئلة الشائعة</a>
-  </footer>
-  <script type="text/javascript" src="js/index.js"></script>
+
+    <footer>
+      <small>جميع الحقوق محفوظة 2021</small><br>
+      <a href="contactUs.html">تواصل معنا</a>
+      <a href="faq.html">الاسئلة الشائعة</a>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

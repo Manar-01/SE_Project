@@ -22,10 +22,10 @@
     <a href="dpp.html"><i class="fa fa-fw fa-user"></i> حسابي</a>
   </nav>
 
+  <!-- Start -->
+  <h1 class="heading centeral-heading"> الطلبات </h1>
 
-
-  <h1 class="heading" style="text-align:center; font-size: 2em;"> الطلبات </h1>
-
+  <!-- button for filtering -->
   <div id="myBtnContainer" style="text-align:center;">
     <button class="btn active" onclick="filterSelection('all')"> الكل</button>
     <button class="btn" onclick="filterSelection('study')"> دراسة</button>
@@ -34,10 +34,12 @@
     <button class="btn" onclick="filterSelection('other')"> آخرى</button>
   </div>
 
-  <div class="order-details">
-    <div class="row" id="order-project">
+  <!-- list of card orders-->
+  <div class="row">
+
+    <div class="col">
       <div class="order-card project">
-        <img src="images/project.png" alt="project" style="width:100%">
+        <img src="images/project.png" alt="project">
         <p><strong>: رقم الطلب</strong></p>
         <p>: المبلغ</p>
         <p> : نوع الدفع</p>
@@ -45,17 +47,33 @@
         <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
       </div>
 
-      <div class="order-card hospital">
-        <img src="images/hospital.png" alt="hospital" style="width:100%">
+    </div>
+    <div class="col">
+      <div class="order-card project">
+        <img src="images/project.png" alt="project">
         <p><strong>: رقم الطلب</strong></p>
         <p>: المبلغ</p>
         <p> : نوع الدفع</p>
-
-        <a href="#">مساندة الحالة</a>
+        <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
       </div>
+    </div>
 
-      <div class="order-card study">
-        <img src="images/study.png" alt="study" style="width:100%">
+    <div class="col">
+      <div class="order-card project">
+        <img src="images/project.png" alt="project">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="order-card hospital">
+        <img src="images/hospital.png" alt="hospital">
         <p><strong>: رقم الطلب</strong></p>
         <p>: المبلغ</p>
         <p> : نوع الدفع</p>
@@ -64,50 +82,52 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="order-card project">
-        <img src="images/project.png" alt="project" style="width:100%">
-        <p><strong>: رقم الطلب</strong></p>
-        <p>: المبلغ</p>
-        <p> : نوع الدفع</p>
-        <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
-      </div>
-
+    <div class="col">
       <div class="order-card hospital">
-        <img src="images/hospital.png" alt="hospital" style="width:100%">
-        <p><strong>: رقم الطلب</strong></p>
-        <p>: المبلغ</p>
-        <p> : نوع الدفع</p>
-        <a href="#">مساندة الحالة</a>
-      </div>
-
-      <div class="order-card study">
-        <img src="images/study.png" alt="study" style="width:100%">
+        <img src="images/hospital.png" alt="hospital">
         <p><strong>: رقم الطلب</strong></p>
         <p>: المبلغ</p>
         <p> : نوع الدفع</p>
         <a href="#">مساندة الحالة</a>
       </div>
     </div>
-    <div class="row">
-      <div class="order-card project">
-        <img src="images/project.png" alt="project" style="width:100%">
-        <p><strong>: رقم الطلب</strong></p>
-        <p>: المبلغ</p>
-        <p> : نوع الدفع</p>
-        <a href="#order-project" onclick="document.getElementById('id01').style.display='block'">مساندة الحالة</a>
-      </div>
 
+    <div class="col">
       <div class="order-card hospital">
-        <img src="images/hospital.png" alt="hospital" style="width:100%">
+        <img src="images/hospital.png" alt="hospital">
         <p><strong>: رقم الطلب</strong></p>
         <p>: المبلغ</p>
         <p> : نوع الدفع</p>
         <a href="#">مساندة الحالة</a>
       </div>
+    </div>
 
+  </div>
+
+  <div class="row">
+    <div class="col">
       <div class="order-card study">
-        <img src="images/study.png" alt="study" style="width:100%">
+        <img src="images/study.png" alt="study">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#">مساندة الحالة</a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="order-card study">
+        <img src="images/study.png" alt="study">
+        <p><strong>: رقم الطلب</strong></p>
+        <p>: المبلغ</p>
+        <p> : نوع الدفع</p>
+        <a href="#">مساندة الحالة</a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="order-card study">
+        <img src="images/study.png" alt="study">
         <p><strong>: رقم الطلب</strong></p>
         <p>: المبلغ</p>
         <p> : نوع الدفع</p>
@@ -116,11 +136,12 @@
     </div>
   </div>
 
+
   <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
     <div class="modal-content order-card project animate">
-      <img src="images/project.png" alt="project" style="width:100%">
+      <img src="images/project.png" alt="project">
       <p><strong>: رقم الطلب</strong></p>
       <p>: المبلغ</p>
       <p> : نوع الدفع</p>

@@ -63,7 +63,7 @@ for (var i = 0; i < btns.length; i++) {
 //function for edit button in cpp/dpp page
 function edit_func() {
   var profile = document.getElementById("profile").elements;
-  for (var i = 0; i < profile.length; i++) {
+  for (var i = 2; i < profile.length; i++) {
     profile[i].removeAttribute("disabled");
   }
 }

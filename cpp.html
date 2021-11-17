@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>حسابي</title>
+  <link rel="stylesheet" href="general.css">
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-  
+
   <a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
   <nav>
     <a href="index.html">الصفحة الرئيسية</a>
@@ -24,58 +25,68 @@
     <a href="index.html#singin"><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
   </nav>
 
+  <!-- Start -->
+  <h1 class="heading"><strong>الملف الشخصي</strong></h1>
   <form id="profile" action="cpp.html" method="post">
-    <legend class="heading"><strong>الملف الشخصي</strong></legend>
-    <div class="row">
-      <div class="col-1">
-        <label for="username"> اسم المستخدم</label>
-      </div>
-      <div class="col-2">
-        <input type="text" name="usernamr" id="username" disabled>
-      </div>
+    <fieldset>
+      <div class="forms-row">
+        <div class="col-1">
+          <label for="username"> اسم المستخدم</label>
+        </div>
+        <div class="col-2">
+          <input type="text" name="usernamr" id="username" disabled>
+        </div>
 
-    </div>
-    <div class="row">
-      <div class="col-1">
-        <label for="usermobile"> رقم الهاتف</label>
       </div>
-      <div class="col-2">
-        <input type="tel" name="usermobile" id="usermobile" disabled>
+      <div class="forms-row">
+        <div class="col-1">
+          <label for="usermobile"> رقم الهاتف</label>
+        </div>
+        <div class="col-2">
+          <input type="tel" name="usermobile" id="usermobile" disabled>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-1">
-        <label for="email"> البريد الالكتروني</label>
+      <div class="forms-row">
+        <div class="col-1">
+          <label for="email"> البريد الالكتروني</label>
+        </div>
+        <div class="col-2">
+          <input type="email" name="email" id="email" disabled>
+        </div>
       </div>
-      <div class="col-2">
-        <input type="email" name="email" id="email" disabled>
+      <div class="forms-row">
+        <div class="col-1">
+          <label for="card"> رقم البطاقة البنكية</label>
+        </div>
+        <div class="col-2">
+          <input type="text" name="card" id="card" disabled>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-1">
-        <label for="card"> رقم البطاقة البنكية</label>
+      <div class="forms-row col-3">
+        <input class="button" type="submit" name="save" value="حفظ" disabled> <button class="button" type="button" name="edit" onclick="edit_func()">تعديل</button>
       </div>
-      <div class="col-2">
-        <input type="text" name="card" id="card" disabled>
-      </div>
-    </div>
-    <div class="row col-3">
-      <input class="button" type="submit" name="save" value="حفظ" disabled> <button class="button" type="button" name="edit" onclick="edit_func()">تعديل</button>
-    </div>
+    </fieldset>
+
   </form>
 
-  <div class="orderProc">
-    <h3>حالة الطلب</h3>
-    <div class="order" id="check">
-      <p> :رقم الطلب</p>
-      <p> :المبلغ المدفوع</p>
-      <p> :المبلغ المتبقي</p>
-      <progress value="0" max="100" style="height: 2em;">0%</progress>
+  <div class="forms-row">
+    <div class="col-1 order-col">
+      <h3>حالة الطلب</h3>
     </div>
-    <div class="row">
-      <a href="ordering.html"><button class="button ordaring" type="button" name="ordering">تقدّم الآن</button></a>
+  </div>
+  <div class="forms-row">
+    <div class="col-1 order-col">
+      <div class="order-card order">
+        <p> :رقم الطلب</p>
+        <p> :المبلغ المدفوع</p>
+        <p> :المبلغ المتبقي</p>
+        <progress value="0" max="100">0%</progress>
+      </div>
     </div>
+  </div>
 
+  <div class="forms-row order-button">
+    <a href="ordering.html"><button class="button ordaring" type="button" name="ordering">تقدّم الآن</button></a>
   </div>
 
   <footer>

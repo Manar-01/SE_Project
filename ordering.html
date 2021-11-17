@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>الطلبات</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
+  <nav>
+  <a href="index.html">الصفحة الرئيسية</a>
+  <a href="about.html">عن مدين</a>
+  <a href="orderProc.html">طريقة الطلب</a>
+  <a href="faq.html">الاسئلة الشائعة</a>
+  <a href="cpp.html"><i class="fa fa-fw fa-user"></i> حسابي</a>
+</nav>
+
+
+<legend class="heading" ><strong>تقديم الطلب</strong></legend>
+
+   <div class="row">
+    <div class="col-6" >
+
+            <h3> السبب</h3>
+
+            <form action="4">
+              <div>
+                  <label><input type="radio" checked = "checked" name="checked"  value="أخرى" />
+                   <div>أخرى</div>
+                   </label>
+                  <label><input type="radio" checked = "checked" name="checked"  value="مشروع" />
+                   <div>مشروع</div>
+                   </label>
+                  <label><input type="radio" checked = "checked" name="checked"  value="دراسة" />
+                   <div>دراسة</div>
+                   </label>
+                  <label><input type="radio" checked = "checked" name="checked"  value="علاج" />
+                   <div>علاج</div>
+                   </label>
+              </div>
+<!--
+                <input type="radio" checked = "checked" name="checked" value="علاج" > علاج
+                <input type="radio" checked = "checked" name="checked" value="دراسة" > دراسة
+                <input type="radio" checked = "checked" name="checked" value="مشروع"> مشروع
+                <input type="radio" checked = "checked" name="checked" value="أخرى"> أخرى
+                -->
+            </form><br><br>
+            <br><br>
+
+              <form action="3">
+                 <h3 ><strong>تفاصيل السبب</strong></h3>
+                <textarea id="textview" name="textview" rows="10" cols="50">
+                  </textarea>
+              </form>
+    </div>
+
+  <div class="col-6">
+
+        <form>
+        <div>
+          <label class="count" for="fname"><h2>:المبلغ</h2>
+          <input class="count_input" type="text" id="fname" name="المبلغ"> </label>
+          </div>
+        </form>
+
+               <form action="2">
+
+              <div>
+              <h3 >نوع السداد </h3>
+                  <label><input type="radio" checked = "checked" name="checked"  value="أقساط" />
+                   <div>أقساط</div>
+                   </label>
+                  <label><input type="radio" checked = "checked" name="checked"  value="دفعة كاملة" />
+                   <div>دفعة كاملة</div>
+                   </label>
+                   </div>
+               </form>
+
+            <h3 > تاريخ السداد </h3>
+            <input type="date" value="2021 - 11 - 13 ">
+
+     </div>
+   </div>
+
+
+      <div class="col-4">
+        <a href="cpp.html"><button class=" button" type="button" name="ordering" >تقديم الطلب</button></a>
+
+    </div>
+</div>
+
+<footer>
+    <small>جميع الحقوق محفوظة 2021</small><br>
+    <a href="contactUs.html">تواصل معنا</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+  </footer>
+</body>
