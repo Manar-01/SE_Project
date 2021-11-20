@@ -321,11 +321,14 @@ textarea {
 }
 
 /*row and col for orders and goals*/
-.row {
+.row{
   text-align: center;
 }
+.row-2 {
+  text-align: right;
+}
 
-.row:after {
+.row:after,.row-2:after,.forms-row:after {
   content: "";
   display: table;
   clear: both;
@@ -455,7 +458,7 @@ textarea {
 .colFaq2 {
   float: right;
   text-align: right;
-  width: 30%;
+  width: 50%;
   margin-top: 0.75em;
 }
 
@@ -470,4 +473,67 @@ li {
   font-weight: bold;
   float: left;
   margin-left: 7em;
+}
+
+
+.count_input {
+    height: 30px;
+    margin-right: 16px;
+    margin-top: 30px;
+    border: 0.063em solid #279F8A;
+    border-radius: 0.75em;
+    direction: rtl;
+}
+
+input[type=date] {
+  display: inline-flex;
+  padding: 0.75em;
+  border: 0.063em solid #279F8A;
+  border-radius: 0.75em;
+}
+
+input[type=radio] {
+float: right;
+}
+
+.t{
+  border-left: 3px solid #279F8A;
+  height: 330px;
+  position: absolute;
+  left: 77.5%;
+  margin-left: 3px;
+  top:310px;
+   z-index: -1000;
+   margin-top: 20px;
+}
+.step-number {
+  float: right;
+  border: 2px solid #279F8A;
+  text-align: center;
+  color: #FFFFFF;
+  background: #9acac2;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  z-index: 530;
+margin-top: 20px;
+}
+.count{
+  float: right;
+  padding-right: 0.6em;
+  padding-bottom: 2em;
+  margin-top: 1.8em;
+}
+
+.orderinst{
+  text-align: center;
+  color: #279F8A;
+  width: 80%;
+  padding: 4em 3em 3em 0;
+  text-align: right;
+  margin-right: 4em;
+
+}
+.orderinst .col-2 h3{
+padding-right: 3em ;
 }

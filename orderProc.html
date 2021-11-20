@@ -20,70 +20,102 @@
 
 <body>
 
-    <a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
+  <a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
   <nav>
-  <a href="index.html">الصفحة الرئيسية</a>
-  <a href="about.html">عن مدين</a>
-  <a href="orderProc.html">طريقة الطلب</a>
-  <a href="faq.html">الاسئلة الشائعة</a>
-  <a href="cpp.html"><i class="fa fa-fw fa-user"></i> حسابي</a>
-</nav>
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="about.html">عن مدين</a>
+    <a href="orderProc.html">طريقة الطلب</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+    <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i> تسجيل الدخول</a>
+  </nav>
 
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
-<legend class="heading" ><strong>طريقة الطلب</strong></legend>
-<div class="container">
-
-<div class="orderProc">
-    <div class="col-2">
-        <div class="icon-box">
-            <span class="step-number hr.new3 num-box">1</span>
-
+    <div class="modal-content animate">
+      <form id="signin" action="" method="post">
+        <img src="images/login.png" width="100" height="100">
+        <div class="row">
+          <div class="col-1">
+            <label for="user_name"> اسم المستخدم</label>
+            <span id="massege" style="color:red; font-size:0.8em;"></span>
+          </div>
+          <div class="col-2">
+            <input type="text" id="user_name" name="user_name" placeholder="أدخل اسم المستخدم " min="3" size="10" autofocus required>
+          </div>
         </div>
-        <h3>حدد قيمة الدين</h3>
-        <p class="top-p top-p2">قم بتحديد قيمة الدين والمبلغ الطارئ الذي تحتاجة لهذه الفترة ، ثم حدد الفترة
-            التي تراها مناسبة لك لتقوم بسداد المبلغ على دفعات او كاملا</p>
-    </div>
- </div>
 
-
-<div class="orderProc">
-    <div class="col-2">
-        <div class="icon-box">
-            <span class="step-number hr.new3 num-box">2</span>
+        <div class="row">
+          <div class="col-1">
+            <label for="pasword"> كلمة المرور</label>
+          </div>
+          <div class="col-2">
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" min="8" required>
+          </div>
         </div>
-<div>
-         <h3>سـّجل البيانات المطلوبة</h3>
-         <p class="top-p top-p2">سيُطلب منك ملئ بعض البيانات، مثل: البيانات الشخصية، وبيانات بنكية  للتحقق من المصداقية قبل البدء بإجراءات العمل على طلب الدين
-         <ins class="assign">تأكد من تسجيلك كمدين أو تعديل ملفك لتكون مدين </ins>، وستتم عملية تقييم الطلب بشكل أسرع في حال كانت جميع البيانات والوثائق مكتملة وصحيحة</p>
+        <div class="row">
+          <div class="col-1">
+            <label for="remember">تذكرني لاحقًا</label>
+            <input type="checkbox" name="remember" value="true" checked>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <a href="createAcc.html"><button class="button" type="button" name="button">إنشاء حساب</button></a>
+            <input class="button" type="submit" value="دخول">
+          </div>
+        </div>
+
+      </form>
     </div>
+  </div>
+
+  <legend class="heading"><strong>طريقة الطلب</strong></legend>
+
+  <div class="orderinst">
+    <div class="col-2">
+      <span class="step-number">1</span>
+      <h3>حدد قيمة الدين</h3>
+      <p class="top-p top-p2">قم بتحديد قيمة الدين والمبلغ الطارئ الذي تحتاجة لهذه الفترة ، ثم حدد الفترة
+        التي تراها مناسبة لك لتقوم بسداد المبلغ على دفعات او كاملا</p>
     </div>
-</div>
+  </div>
 
 
-<div class="orderProc">
+  <div class="orderinst">
+    <div class="col-2">
+      <span class="step-number">2</span>
+      <div>
+        <h3>سـّجل البيانات المطلوبة</h3>
+        <p class="top-p top-p2">سيُطلب منك ملئ بعض البيانات، مثل: البيانات الشخصية، وبيانات بنكية للتحقق من المصداقية قبل البدء بإجراءات العمل على طلب الدين
+          <ins class="assign">تأكد من تسجيلك كمدين أو تعديل ملفك لتكون مدين </ins>، وستتم عملية تقييم الطلب بشكل أسرع في حال كانت جميع البيانات والوثائق مكتملة وصحيحة</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="orderinst">
     <div class="col-2">
       <div class="icon-box">
         <span class="step-number hr.new3 num-box">3</span>
-     </div>
+      </div>
 
-    <h3>استلم قيمة التمويل</h3>
-    <p class="top-p top-p2">بعد التحقق من صحة البيانات و إيجاد مساند للحالة ؛ سيتم البدء بإجراءات عملية إيداع مبلغ الدين في حسابك الشخصي المقدم إلينا وستبدأ
-      أول عملية سداد للدين من تاريخ نزول أول راتب لكم</p>
+      <h3>استلم قيمة التمويل</h3>
+      <p class="top-p top-p2">بعد التحقق من صحة البيانات و إيجاد مساند للحالة ؛ سيتم البدء بإجراءات عملية إيداع مبلغ الدين في حسابك الشخصي المقدم إلينا وستبدأ
+        أول عملية سداد للدين من تاريخ نزول أول راتب لكم</p>
     </div>
-</div>
-
-<hr class="t">
-
-<div class="col-4">
-    <a href="ordering.html"><button class="button" type="button" name="ordering" >اطلب مسانـدة الان</button></a>
-
   </div>
 
-<footer>
+  <hr class="t">
+
+
+  <footer style="padding-top: 20em;">
     <small>جميع الحقوق محفوظة 2021</small><br>
     <a href="contactUs.html">تواصل معنا</a>
     <a href="faq.html">الاسئلة الشائعة</a>
-</footer>
+  </footer>
 
 </body>
+
 </html>
