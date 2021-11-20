@@ -476,15 +476,6 @@ li {
 }
 
 
-.count_input {
-    height: 30px;
-    margin-right: 16px;
-    margin-top: 30px;
-    border: 0.063em solid #279F8A;
-    border-radius: 0.75em;
-    direction: rtl;
-}
-
 input[type=date] {
   display: inline-flex;
   padding: 0.75em;
@@ -495,28 +486,32 @@ input[type=date] {
 input[type=radio] {
 float: right;
 }
+.assign {
+  font-weight: bold;
+  color: red;
+}
 
 .t{
-  border-left: 3px solid #279F8A;
-  height: 330px;
+  border-left: 0.188em solid #279F8A;
+  height: 20.625em;
   position: absolute;
   left: 77.5%;
-  margin-left: 3px;
-  top:310px;
+  margin-left: 0.188em;
+  top:19.375em;
    z-index: -1000;
-   margin-top: 20px;
+   margin-top: 1.25em;
 }
 .step-number {
   float: right;
-  border: 2px solid #279F8A;
+  border: 0.125em solid #279F8A;
   text-align: center;
   color: #FFFFFF;
   background: #9acac2;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 2.813em;
+  height: 2.813em;
   z-index: 530;
-margin-top: 20px;
+margin-top: 1.25em;
 }
 .count{
   float: right;
